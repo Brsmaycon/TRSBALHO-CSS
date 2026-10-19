@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicando Estilos de Caixa</title>
+  <style>
+    /* Configuração padrão para todos os parágrafos */
+    p {
+      background-color: #9f70f6;
+      width: 200px;
+      height: 200px;
+      box-sizing: content-box; /* Garante que padding e border somem ao tamanho */
+    }
+
+    /* Exemplo 1: Borda preta sólida */
+    .exemplo-1 {
+      border: 4px solid #000000;
+    }
+
+    /* Exemplo 2: Padding de 2em em todos os lados */
+    .exemplo-2 {
+      padding: 2em;
+    }
+
+    /* Exemplo 3: Borda preta de 4px + Padding de 2em */
+    .exemplo-3 {
+      border: 4px solid #000000;
+      padding: 2em;
+    }
+
+    /* Exemplo 4: Margem de 4px + Borda azul tracejada + Padding de 2em */
+    .exemplo-4 {
+      margin: 4px;
+      border: 1px dashed #eb7405; /* Borda fina para delimitar o limite */
+      padding: 2em;
+    }
+
+    /* Exemplo 5: Margem externa de 4px + Borda grossa tracejada + Padding de 1em + Margem interna azul de 6em */
+    /* Nota: O diagrama mostra uma área de recuo azul de 6em que funciona como uma margem externa maior ou padding composto */
+    .exemplo-5 {
+      margin: 6em;
+      border: 4px dashed #000000;
+      padding: 1em;
+    }
+
+    /* Exemplo 6: Padding superior/inferior de 1em, Laterais de 50px + Margens automáticas (centralizado) + Borda fina */
+    .exemplo-6 {
+      border: 2px solid #eeea09;
+      padding: 1em 50px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Exercício: Estilos de Caixa</h1>
+
+  <h2>Exemplo 1</h2>
+  <p class="exemplo-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor venenatis mi. Nunc semper, orci a adipiscing tempus, magna nulla varius nisl, imperdiet fermentum nisi erat vel arcu.</p>
+
+  <h2>Exemplo 2</h2>
+  <p class="exemplo-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor venenatis mi. Nunc semper, orci a adipiscing tempus, magna nulla varius nisl, imperdiet fermentum nisi erat vel arcu.</p>
+
+  <h2>Exemplo 3</h2>
+  <p class="exemplo-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor venenatis mi. Nunc semper, orci a adipiscing tempus, magna nulla varius nisl, imperdiet fermentum nisi erat vel arcu.</p>
+
+  <h2>Exemplo 4</h2>
+  <p class="exemplo-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor venenatis mi. Nunc semper, orci a adipiscing tempus, magna nulla varius nisl, imperdiet fermentum nisi erat vel arcu.</p>
+
+  <h2>Exemplo 5</h2>
+  <p class="exemplo-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor venenatis mi. Nunc semper, orci a adipiscing tempus, magna nulla varius nisl, imperdiet fermentum nisi erat vel arcu.</p>
+
+  <h2>Exemplo 6</h2>
+  <p class="exemplo-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor venenatis mi. Nunc semper, orci a adipiscing tempus, magna nulla varius nisl, imperdiet fermentum nisi erat vel arcu.</p>
+
+</body>
+</html>
